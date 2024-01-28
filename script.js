@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
       setTimeout(() => {
         element.style.opacity = 1;
         element.style.transform = 'translateX(0)';
-      }, index * 500); // Adjust delay times (in milliseconds)
+      }, index * 1000); // Adjust delay times (in milliseconds)
     });
   }
 
