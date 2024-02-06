@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Selecting elements for the fade-in effect
   const nameElement = document.querySelector('.fade-name');
   const nameElement2 = document.querySelector('.fade-name2');
   const emailElement = document.querySelector('.fade-email');
@@ -7,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const querryElement = document.querySelector('.icon_querry');
   const fadeElements = [nameElement, nameElement2, emailElement, phoneElement];
   const fadeElements2 = [graphicElement, querryElement];
-
 
   // Function to handle the fade-in effect
   function fadeIn() {
@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Function to handle another fade-in effect
   function fadeIn2() {
     fadeElements2.forEach((element, index) => {
       setTimeout(() => {
@@ -28,10 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Set a short delay and then trigger the fade-in functions
   setTimeout(fadeIn, 100);
-   setTimeout(fadeIn2, 100);
-
-  // Call the fadeIn function after a short delay
- // setTimeout(fadeIn, 100);
-
+  setTimeout(fadeIn2, 100);
 });

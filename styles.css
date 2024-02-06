@@ -1,9 +1,16 @@
+/* Global styling for the entire body */
 body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 5px;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   height: 100vh;
   overflow: hidden;
@@ -11,9 +18,10 @@ body {
   color: #ecf0f1; /* Light Text Color */
 }
 
+/* Styling for the icon element */
 .icon {
   background: url('path10.svg') no-repeat center center;
- position: absolute;
+  position: absolute;
   /* Additional styling */
   opacity: 0;
   width: 100%;
@@ -21,8 +29,7 @@ body {
   transition: opacity 5s;
 }
 
-
-
+/* Styling for fade-in elements */
 .fade-in-element {
   opacity: 0;
   transform: translateY(100px); /* Adjust for vertical centering */
@@ -31,6 +38,7 @@ body {
   /* Adjust the font size */
 }
 
+/* Styling for another fade-in element */
 .fade-in-element2 {
   opacity: 0;
   transform: scale(1.5) rotate(45deg); /* Adjust for vertical centering */
@@ -39,11 +47,13 @@ body {
   /* Adjust the font size */
 }
 
+/* Styling for an element with infinite rotation */
 .fade-in-element3 {
   animation: rotateForever 240s linear infinite;
   animation-delay: 6s;
 }
 
+/* Keyframes for infinite rotation */
 @keyframes rotateForever {
   from {
     transform: rotate(0deg);
@@ -53,72 +63,78 @@ body {
   }
 }
 
-/* Additional styling for contact container */
+/* Additional styling for the contact container */
 .contact-container {
   text-align: center;
   font-size: 24px; /* Adjust the font size */
 }
 
+/* Styling for specific elements within the contact container */
 .fade-name {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .fade-name2 {
-   font-size: 45px;
+  font-size: 45px;
 }
 
-.fade-email{
-    font-size: 30px;
+.fade-email {
+  font-size: 30px;
 }
 
-.fade-phone{
-    font-size: 30px;
+.fade-phone {
+  font-size: 30px;
 }
 
-
+/* Media query for screens with a maximum width of 600px */
 @media screen and (max-width: 600px) {
 
+  /* Adjustments for the icon in smaller screens */
   .icon {
     width: 1px;
     height: 1px;
   }
 
+  /* Styling for another icon in smaller screens */
   .icon_querry {
-  background: url('path_querry.svg') no-repeat center center;
- position: absolute;
-  /* Additional styling */
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  transition: opacity 5s;
-}
+    background: url('path_querry.svg') no-repeat center center;
+    position: absolute;
+    /* Additional styling */
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 5s;
+  }
 
-.fade-in-element2 {
-  opacity: 0;
-  transform: scale(1.5) rotate(45deg); /* Adjust for vertical centering */
-  transition: opacity 10s, transform 6s;
-  text-align: center;
-  /* Adjust the font size */
-}
+  /* Adjusted styling for fade-in element in smaller screens */
+  .fade-in-element2 {
+    opacity: 0;
+    transform: scale(1.5) rotate(45deg); /* Adjust for vertical centering */
+    transition: opacity 10s, transform 6s;
+    text-align: center;
+    /* Adjust the font size */
+  }
 
-.fade-in-element3 {
-  animation: rotateForever 240s linear infinite;
-  animation-delay: 6s;
-}
+  /* Styling for another element with infinite rotation in smaller screens */
+  .fade-in-element3 {
+    animation: rotateForever 240s linear infinite;
+    animation-delay: 6s;
+  }
 
+  /* Adjusted styling for specific elements within the contact container in smaller screens */
   .fade-name {
     font-size: 22px;
+  }
+
+  .fade-name2 {
+  font-size: 20px;
 }
 
-.fade-name2 {
-   font-size: 20px;
-}
-
-.fade-email{
+  .fade-email {
     font-size: 18px;
-}
+  }
 
-.fade-phone{
+  .fade-phone {
     font-size: 18px;
-}
+  }
 }
