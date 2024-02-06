@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const wireContainer = document.getElementById('wire-container');
   const nameElement = document.querySelector('.fade-name');
+  const nameElement2 = document.querySelector('.fade-name2');
   const emailElement = document.querySelector('.fade-email');
   const phoneElement = document.querySelector('.fade-phone');
   const graphicElement = document.querySelector('.icon');
   const querryElement = document.querySelector('.icon_querry');
-  const fadeElements = [nameElement, emailElement, phoneElement];
+  const fadeElements = [nameElement, nameElement2, emailElement, phoneElement];
   const fadeElements2 = [graphicElement, querryElement];
-  const numWires = 5;
+
 
   // Function to handle the fade-in effect
   function fadeIn() {

@@ -63,6 +63,10 @@ body {
     font-size: 50px;
 }
 
+.fade-name2 {
+   font-size: 45px;
+}
+
 .fade-email{
     font-size: 30px;
 }
@@ -104,6 +108,10 @@ body {
 
   .fade-name {
     font-size: 22px;
+}
+
+.fade-name2 {
+   font-size: 20px;
 }
 
 .fade-email{
